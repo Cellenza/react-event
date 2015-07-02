@@ -54,10 +54,7 @@
         },
 
         selectLetter : function (newLetter) {
-            var component =  this;
-            return function (e) {
-                return component.setState({letter : newLetter});
-            } 
+            return this.setState({letter : newLetter});
         }
     });
 
